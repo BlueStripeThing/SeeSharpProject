@@ -1,0 +1,28 @@
+﻿<Window x:Name="MainWind" x:Class="SeeSharpProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SeeSharpProject"
+        mc:Ignorable="d"
+        Title="Шифр Виженера" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="119*"/>
+            <RowDefinition Height="300*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="WindTitle" Content="Де/Шифратор Виженера" Margin="285,18,285,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="PathBox" HorizontalAlignment="Left" Height="23" Margin="28,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="LoadFile" Content="Загрузить" HorizontalAlignment="Left" Margin="28,89,0,0" VerticalAlignment="Top" Width="75" Click="LoadFile_Click"/>
+        <Button x:Name="SaveFile" Content="Сохранить" HorizontalAlignment="Left" Margin="188,89,0,0" VerticalAlignment="Top" Width="75" Click="SaveFile_Click"/>
+        <Label x:Name="BeforeLabel" Content="Введите рабочий текст, или загрузите из файла" HorizontalAlignment="Left" Margin="21,6.087,0,0" VerticalAlignment="Top" Width="271" Grid.Row="1"/>
+        <Label x:Name="AfterLabel" Content="После обработки" HorizontalAlignment="Left" Margin="445,1.087,0,0" VerticalAlignment="Top" Width="111" Grid.Row="1"/>
+        <RadioButton x:Name="EncrBtn" Content="Шифровка" HorizontalAlignment="Left" Margin="472,69,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <RadioButton x:Name="DecrBtn" Content="Расшифровка" HorizontalAlignment="Left" Margin="472,89,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <Button x:Name="StartBtn" Content="Магия" HorizontalAlignment="Left" Margin="697,74,0,0" VerticalAlignment="Top" Width="85" Height="23" Click="StartBtn_Click"/>
+        <TextBox x:Name="KeyBox" HorizontalAlignment="Left" Height="23" Margin="572,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="скорпион" SpellCheck.IsEnabled="True"/>
+        <TextBox x:Name="BeforeBlock" HorizontalAlignment="Left" Height="253" Margin="21,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" Grid.Row="1" Text="поздравляю, ты получил исходный текст!!! "/>
+        <TextBox x:Name="AfterBlock" HorizontalAlignment="Left" Height="253" Margin="445,37,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="326"/>
+
+    </Grid>
+</Window>
