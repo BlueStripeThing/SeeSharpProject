@@ -146,7 +146,7 @@ namespace SeeSharpProject
                 // Загрузка из txt
                 else
                 {
-                    string line = System.IO.File.ReadAllText(path);
+                    string line = Encoding.Default.GetString(File.ReadAllBytes(path));
                     result = line;
                 }
 
