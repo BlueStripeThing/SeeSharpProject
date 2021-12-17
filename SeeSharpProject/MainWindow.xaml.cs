@@ -79,5 +79,7 @@ namespace SeeSharpProject
             }
             else MessageBox.Show("Укажите корректный путь");
         }
+
+
     }
 }
